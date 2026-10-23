@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملف التحقيق الجنائي السري LS-001 | LOS SANTOS POLICE DEPARTMENT</title>
+    <meta name="description" content="الملف الجنائي السري رقم LS-001 الصادر عن شرطة لوس سانتوس - قضية ألكساندر بتروف (لوسفر) والمنظمة السرية">
+    
+    <!-- Google Fonts with local fallbacks in CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@400;500;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dossier-theme">
+    <!-- Security Classification Watermark Banner -->
+    <div class="classified-top-banner">
+        <div class="banner-inner">
+            <span class="security-level"><span class="pulse-dot"></span> وثيقة أمنية سرية للغاية — CLASSIFIED // LEVEL 1</span>
+            <span class="agency-tag">LOS SANTOS POLICE DEPARTMENT • SPECIAL INVESTIGATIONS DIVISION</span>
+            <span class="case-code">CASE REF: LS-001</span>
+        </div>
+    </div>
+
+    <!-- Official Police Header & Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="header-container">
+            <!-- Official Identity: LOS SANTOS POLICE DEPARTMENT -->
+            <div class="official-branding">
+                <img src="assets/images/lspd-logo.webp" alt="POLICE DEPARTMENT شرطة لوس سانتوس" class="lspd-official-logo">
+                <div class="branding-text">
+                    <span class="department-en">LOS SANTOS POLICE DEPARTMENT</span>
+                    <h1 class="department-ar">شرطة لوس سانتوس</h1>
+                    <span class="department-sub">وحدة التحقيقات الجنائية والاستخباراتية الخاصة</span>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Toggle -->
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#dashboard" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#summary" class="nav-link">ملخص القضية</a></li>
+                    <li><a href="#characters" class="nav-link">الشخصيات</a></li>
+                    <li><a href="#fake-execution" class="nav-link highlight-link">حقيقة إعدام لوسفر</a></li>
+                    <li><a href="#evidence" class="nav-link">الأدلة المصورة</a></li>
+                    <li><a href="#charges" class="nav-link">جدول التهم</a></li>
+                    <li><a href="#timeline" class="nav-link">الخط الزمني</a></li>
+                    <li><a href="#joint-investigation" class="nav-link">التحقيق المشترك</a></li>
+                    <li><a href="#final-report" class="nav-link">التقرير الختامي</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-print" id="btnPrintNav" title="طباعة التقرير الرسمي">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                        </svg>
+                        <span>طباعة الملف</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="main-content">
+
+        <!-- ==============================================
+             SECTION 4: الصفحة الرئيسية — لوحة القضية
+             ============================================== -->
+        <section id="dashboard" class="dossier-section section-dashboard">
+            <div class="container">
+                <!-- Case Header Card -->
+                <div class="case-hero-card">
+                    <div class="case-stamp-wrapper">
+                        <div class="classified-stamp">TOP SECRET // سري للغاية</div>
+                        <div class="case-file-badge">ملف رقم: <span>LS-001</span></div>
+                    </div>
+
+                    <div class="case-titles">
+                        <div class="priority-alert-badge">
+                            <span class="alert-icon">⚠️</span>
+                            <span class="alert-text">TOP PRIORITY TARGET — مطلوب من الدرجة الأولى</span>
+                        </div>
+                        <h2 class="main-case-title">ملف القضية LS-001</h2>
+                        <h3 class="sub-case-title">ألكساندر بتروف — الاسم الحركي لوسفر (LUCIFER)</h3>
+                    </div>
+
+                    <!-- Target / Dossier Quick Info Grid -->
+                    <div class="dossier-meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">الاسم الحقيقي:</span>
+                            <span class="meta-value">ألكساندر بتروف</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">الاسم الحركي:</span>
+                            <span class="meta-value code-font">لوسفر (LUCIFER)</span>
+                        </div>
+                        <div class="meta-item danger-highlight">
+                            <span class="meta-label">التصنيف الأمني:</span>
+                            <span class="meta-value">مطلوب من الدرجة الأولى</span>
+                        </div>
+                        <div class="meta-item danger-highlight">
+                            <span class="meta-label">مستوى الخطورة:</span>
+                            <span class="meta-value">بالغ الخطورة (EXTREME DANGER)</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">الارتباطات:</span>
+                            <span class="meta-value">منظمة سرية يقودها شخص يلقب بـ «البروفيسور»</span>
+                        </div>
+                        <div class="meta-item alert-highlight">
+                            <span class="meta-label">الحالة الجنائية:</span>
+                            <span class="meta-value">تم التحقق من استمرار وجوده على قيد الحياة بعد واقعة إطلاق النار</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">الجهة المسؤولة عن الملف:</span>
+                            <span class="meta-value bold-lspd">LOS SANTOS POLICE DEPARTMENT</span>
+                        </div>
+                        <div class="meta-item status-ready">
+                            <span class="meta-label">حالة الملف:</span>
+                            <span class="meta-value">مكتمل التحقيق وجاهز للإحالة القضائية ضمن أحداث القضية</span>
+                        </div>
+                    </div>
+
+                    <!-- Live Statistical Counters (Driven dynamically by script.js) -->
+                    <div class="dossier-stats-container">
+                        <h4 class="stats-section-title">إحصائيات وحصر محتويات الملف التحقيقي المعتمد</h4>
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number" id="statChargesCount">6</div>
+                                <div class="stat-label">التهم الجنائية الموجهة</div>
+                                <div class="stat-sub">موثقة ومدرجة بالجدول</div>
+                            </div>
+                            <div class="stat-card available-stat">
+                                <div class="stat-number" id="statAvailableEvidenceCount">6</div>
+                                <div class="stat-label">إجمالي الأدلة المعتمدة</div>
+                                <div class="stat-sub">أدلة أصلية محرزة ومثبتة</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" id="statImagesCount">4</div>
+                                <div class="stat-label">لقطات المراقبة المصورة</div>
+                                <div class="stat-sub">صور جنائية عالية الدقة</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" id="statVideosCount">2</div>
+                                <div class="stat-label">التسجيلات المرئية المعتمدة</div>
+                                <div class="stat-sub" id="statVideosSub">تسجيلات مرئية أصلية مشفرة</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Navigation CTA Buttons -->
+                    <div class="hero-actions">
+                        <a href="#summary" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                            <span>الانتقال إلى ملخص القضية</span>
+                        </a>
+                        <a href="#evidence" class="btn btn-secondary">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+                            <span>استعراض الأدلة المحرزة</span>
+                        </a>
+                        <a href="#fake-execution" class="btn btn-danger-pulse">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+                            <span>حقيقة إعدام لوسفر</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 5: ملخص القضية
+             ============================================== -->
+        <section id="summary" class="dossier-section section-summary">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">INVESTIGATION BRIEF</span>
+                    <h2 class="section-title">ملخص التحقيق</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">عرض تفصيلي للوقائع والارتباطات الجنائية المعتمدة لدى شرطة لوس سانتوس</p>
+                </div>
+
+                <div class="summary-card">
+                    <div class="summary-watermark">CONFIDENTIAL</div>
+                    
+                    <div class="summary-paragraph-block">
+                        <div class="para-badge">توصيف الهدف والارتباطات</div>
+                        <p class="summary-text leading-text">
+                            ألكساندر بتروف، المعروف بالاسم الحركي <strong>«لوسفر»</strong>، هو المساعد الأول لشخص يُعرف باسم <strong>«البروفيسور»</strong>، وهو عالم أبحاث ومطور لأنظمة تسليح متقدمة تشمل الروبوتات المدعومة بالذكاء الاصطناعي والأسلحة البيولوجية.
+                        </p>
+                    </div>
+
+                    <div class="summary-paragraph-block">
+                        <div class="para-badge">وقائع الاستهداف المسلح لرجال الشرطة</div>
+                        <p class="summary-text">
+                            تشير نتائج التحقيق إلى تورط بتروف في الهجمات التي استهدفت عناصر شرطة لوس سانتوس، بما في ذلك <strong>عمليات قنص من المباني المقابلة لمقر الشرطة</strong>، بهدف تعطيل الاستجابة الأمنية ومنع نقل روبوت متقدم وقع في قبضة الشرطة خلال عملية قادها نائب رئيس الشرطة <strong>ريموند ريد</strong>.
+                        </p>
+                    </div>
+
+                    <div class="summary-paragraph-block">
+                        <div class="para-badge">اختطاف الضابط والإكراه الجنائي</div>
+                        <p class="summary-text">
+                            كما يتضمن ملف القضية أدلة تتعلق باختطاف الضابط <strong>ريك جونير</strong> وتسليمه إلى البروفيسور، الذي هدده وأجبره على إطلاق النار على بتروف. وبعد ذلك، أوهمه بأن عملية الإعدام نجحت، واستخدم التسجيل لابتزازه ومحاولة إجباره على تقديم معلومات وموارد شرطية للمنظمة.
+                        </p>
+                    </div>
+
+                    <div class="summary-paragraph-block highlight-block">
+                        <div class="para-badge alert-badge">كشف التناقض الجوهري والحقيقة</div>
+                        <p class="summary-text">
+                            لكن التحقيق كشف عن <strong>تناقض جوهري في واقعة الإعدام</strong>، حيث أظهرت تسجيلات الكاميرات المشفرة أن بتروف تلقى العلاج بعد إطلاق النار، دون علم ريك جونير.
+                        </p>
+                        <p class="summary-text conclusion-sub">
+                            أدى هذا الاكتشاف إلى <strong>إعادة تقييم مسؤولية ريك</strong>، وتوجيه التحقيق نحو دور بتروف والبروفيسور في الاختطاف والإكراه والتلاعب بالأدلة.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 6: قسم الشخصيات المرتبطة بالقضية
+             ============================================== -->
+        <section id="characters" class="dossier-section section-characters">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">PERSONS OF INTEREST</span>
+                    <h2 class="section-title">الشخصيات المرتبطة بالقضية</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">بطاقات التحقيق الفردية للمتهمين والضباط المرتبطين بالقضية</p>
+                </div>
+
+                <div class="characters-grid">
+                    <!-- الشخصية 1: ألكساندر بتروف -->
+                    <div class="character-card wanted-border" id="charPetrov">
+                        <div class="char-header">
+                            <span class="char-badge danger-badge">المتهم الرئيسي — مطلوب أول</span>
+                            <span class="char-code">REF-POI-01</span>
+                        </div>
+                        <div class="char-photo-area">
+                            <div class="placeholder-photo wanted-photo" id="petrovPhotoSlot">
+                                <div class="photo-crosshair"></div>
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor" class="avatar-svg">
+                                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                </svg>
+                                <span class="photo-caption">بانتظار إدراج الصورة الرسمية</span>
+                                <span class="photo-hint">سيتم التحديث فور استلام الصورة</span>
+                            </div>
+                        </div>
+                        <div class="char-info">
+                            <h3 class="char-name">ألكساندر بتروف</h3>
+                            <div class="char-alias">الاسم الحركي: <span>لوسفر (LUCIFER)</span></div>
+                            
+                            <ul class="char-details-list">
+                                <li>
+                                    <span class="d-label">التصنيف:</span>
+                                    <span class="d-val danger-text">مطلوب من الدرجة الأولى</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الدور:</span>
+                                    <span class="d-val">المساعد الأول للبروفيسور</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الاشتباه:</span>
+                                    <span class="d-val">المشاركة في الهجمات على الشرطة، وعمليات القنص، واختطاف ريك جونير، والتلاعب بواقعة الإعدام.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الحالة الجنائية:</span>
+                                    <span class="d-val status-confirmed">ثبت استمرار وجوده على قيد الحياة.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- الشخصية 2: البروفيسور -->
+                    <div class="character-card high-risk-border" id="charProfessor">
+                        <div class="char-header">
+                            <span class="char-badge purple-badge">قائد المنظمة السرية</span>
+                            <span class="char-code">REF-POI-02</span>
+                        </div>
+                        <div class="char-photo-area">
+                            <div class="placeholder-photo mystery-photo" id="professorPhotoSlot">
+                                <div class="photo-crosshair"></div>
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor" class="avatar-svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                                </svg>
+                                <span class="photo-caption">بانتظار إدراج الصورة الرسمية</span>
+                                <span class="photo-hint">سيتم التحديث فور استلام الصورة</span>
+                            </div>
+                        </div>
+                        <div class="char-info">
+                            <h3 class="char-name">البروفيسور</h3>
+                            <div class="char-alias">الصفة: <span>العقل المدبر للأبحاث والتسليح</span></div>
+                            
+                            <ul class="char-details-list">
+                                <li>
+                                    <span class="d-label">الدور:</span>
+                                    <span class="d-val">قائد المنظمة السرية</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الاختصاص:</span>
+                                    <span class="d-val">الأبحاث وتطوير الروبوتات المتقدمة وأنظمة التسليح (AI والأسلحة البيولوجية).</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الاشتباه:</span>
+                                    <span class="d-val">التهديد والإكراه والابتزاز والتلاعب بواقعة الإعدام.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الصلة بالقضية:</span>
+                                    <span class="d-val">احتجاز ريك جونير والتدخل في علاج بتروف بعد إطلاق النار.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- الشخصية 3: الضابط ريك جونير -->
+                    <div class="character-card officer-cleared-border" id="charRick">
+                        <div class="char-header">
+                            <span class="char-badge cleared-badge">ضحية اختطاف وإكراه — أُسقطت المسؤولية</span>
+                            <span class="char-code">REF-OFF-01</span>
+                        </div>
+                        <div class="char-photo-area">
+                            <div class="placeholder-photo officer-photo" id="rickPhotoSlot">
+                                <div class="photo-crosshair"></div>
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor" class="avatar-svg">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+                                </svg>
+                                <span class="photo-caption">بانتظار إدراج الصورة الرسمية</span>
+                                <span class="photo-hint">سيتم التحديث فور استلام الصورة</span>
+                            </div>
+                        </div>
+                        <div class="char-info">
+                            <h3 class="char-name">الضابط ريك جونير</h3>
+                            <div class="char-alias">الصفة: <span>عنصر شرطة لوس سانتوس</span></div>
+                            
+                            <ul class="char-details-list">
+                                <li>
+                                    <span class="d-label">الدور:</span>
+                                    <span class="d-val">ضابط شرطة تعرض للاختطاف والتهديد.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الواقعة:</span>
+                                    <span class="d-val">أُجبر على إطلاق النار على بتروف تحت التهديد المباشر.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">النتيجة:</span>
+                                    <span class="d-val">أظهرت التسجيلات أن بتروف تلقى العلاج بعد إطلاق النار، بينما كان ريك يعتقد أن الإعدام قد نجح.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الخلاصة الجنائية:</span>
+                                    <span class="d-val status-cleared">انتفت مسؤوليته عن إعدام بتروف وفق الأدلة المعروضة، ولم تثبت الأدلة المعروضة تعاونه الإرادي مع المنظمة.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- الشخصية 4: نائب رئيس الشرطة ريموند ريد -->
+                    <div class="character-card command-border" id="charRaymond">
+                        <div class="char-header">
+                            <span class="char-badge command-badge">قيادة شرطة لوس سانتوس</span>
+                            <span class="char-code">REF-CMD-01</span>
+                        </div>
+                        <div class="char-photo-area">
+                            <div class="placeholder-photo command-photo" id="raymondPhotoSlot">
+                                <div class="photo-crosshair"></div>
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="currentColor" class="avatar-svg">
+                                    <path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 16h2v2h-2zm0-6h2v4h-2z"/>
+                                </svg>
+                                <span class="photo-caption">بانتظار إدراج الصورة الرسمية</span>
+                                <span class="photo-hint">سيتم التحديث فور استلام الصورة</span>
+                            </div>
+                        </div>
+                        <div class="char-info">
+                            <h3 class="char-name">ريموند ريد</h3>
+                            <div class="char-alias">الرتبة: <span>نائب رئيس الشرطة (Deputy Chief)</span></div>
+                            
+                            <ul class="char-details-list">
+                                <li>
+                                    <span class="d-label">الدور:</span>
+                                    <span class="d-val">قائد العملية الأمنية المرتبطة بالسيطرة على الروبوت المتقدم.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الصلة بالقضية:</span>
+                                    <span class="d-val">العملية التي أعقبها استهداف عناصر الشرطة بهدف تعطيل نقل الروبوت.</span>
+                                </li>
+                                <li>
+                                    <span class="d-label">الحالة التحقيقية:</span>
+                                    <span class="d-val">مُشرف وموثق للعمليات الأمنية وضبط المحرزات.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 7: القسم الرئيسي — حقيقة إعدام لوسفر
+             ============================================== -->
+        <section id="fake-execution" class="dossier-section section-fake-execution">
+            <div class="container">
+                <div class="cinematic-header">
+                    <div class="badge-row">
+                        <span class="core-section-badge">العنصر المحوري في التحقيق</span>
+                        <span class="declass-badge">DECLASSIFIED REVELATION</span>
+                    </div>
+                    <h2 class="cinematic-title">حقيقة إعدام لوسفر</h2>
+                    <h3 class="cinematic-sub">THE FAKE EXECUTION — التسجيلات والتدخل الطبي الخفي</h3>
+                    <div class="title-divider red-divider"></div>
+                    <p class="cinematic-lead">
+                        إعادة بناء وقائع عملية الإعدام المزعومة وكيفية تدبير البروفيسور لمخطط الخداع والإكراه
+                    </p>
+                </div>
+
+                <!-- Highlighted Investigative Conclusion (البطاقة البارزة) -->
+                <div class="key-finding-banner">
+                    <div class="finding-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <div class="finding-content">
+                        <div class="finding-header-badge">النتيجة التحقيقية الرسمية المعتمدة</div>
+                        <blockquote class="official-finding-quote">
+                            «أثبتت التسجيلات أن ريك جونير أطلق النار على ألكساندر بتروف تحت التهديد، وأن بتروف لم يمت نتيجة الواقعة، بل تلقى العلاج من البروفيسور دون علم ريك. وبناءً على ذلك، انتفت مسؤولية ريك عن إعدام بتروف، ولم تثبت الأدلة المعروضة تعاونه الإرادي مع المنظمة.»
+                        </blockquote>
+                        <div class="finding-meta">
+                            <span>صادر عن: وحدة التحقيقات الجنائية الخاصة — LSPD</span>
+                            <span>الحالة الإجرائية: معتمد ومثبت بالأدلة الرقمية</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Incident Sequential Flow (تسلسل الواقعة) -->
+                <div class="execution-sequence-card">
+                    <h4 class="card-inner-title">تسلسل الواقعة ومراحل التلاعب الجنائي</h4>
+                    <div class="sequence-grid">
+                        <div class="seq-step">
+                            <div class="seq-num">01</div>
+                            <div class="seq-body">
+                                <h5>اختطاف الضابط</h5>
+                                <p>اختطاف الضابط ريك جونير واحتجازه قسرياً وتسليمه مباشرة إلى البروفيسور.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step">
+                            <div class="seq-num">02</div>
+                            <div class="seq-body">
+                                <h5>التهديد والإجبار</h5>
+                                <p>تهديد ريك جونير بالسلاح وإجباره تحت الإكراه التام على إطلاق النار على ألكساندر بتروف.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step">
+                            <div class="seq-num">03</div>
+                            <div class="seq-body">
+                                <h5>توثيق الواقعة بالروبوت</h5>
+                                <p>تصوير واقعة إطلاق النار عبر كاميرات المراقبة المدمجة في الروبوت التابع للبروفيسور.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step">
+                            <div class="seq-num">04</div>
+                            <div class="seq-body">
+                                <h5>الابتزاز الأمني</h5>
+                                <p>استخدام مقطع التصوير لابتزاز ريك جونير ومحاولة إجباره على توفير معلومات حساسة وموارد شرطية.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step">
+                            <div class="seq-num">05</div>
+                            <div class="seq-body">
+                                <h5>ظهور التناقض الجوهري</h5>
+                                <p>ظهور تناقض قاطع بين اعتقاد ريك بنجاح الإعدام ومعلومات استخباراتية تؤكد بقاء بتروف على قيد الحياة.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step">
+                            <div class="seq-num">06</div>
+                            <div class="seq-body">
+                                <h5>فحص كاميرات السفينة</h5>
+                                <p>تكليف فريق التحقيق الخاص بمراجعة التسجيلات المشفرة لكاميرات المراقبة على السفينة الحربية.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step alert-step">
+                            <div class="seq-num">07</div>
+                            <div class="seq-body">
+                                <h5>كشف التدخل الطبي السري</h5>
+                                <p>اكتشاف مقاطع تثبت قيام البروفيسور بالتدخل الطبي وعلاج بتروف فور إطلاق النار دون علم ريك.</p>
+                            </div>
+                        </div>
+
+                        <div class="seq-step success-step">
+                            <div class="seq-num">08</div>
+                            <div class="seq-body">
+                                <h5>إثبات الخداع وانتفاء المسؤولية</h5>
+                                <p>إثبات أن ريك جونير كان ضحية خديعة وإكراه مبيت، وإسقاط تهمة القتل عنه بالدليل القاطع.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photographic Evidence Card: مسرح واقعة إطلاق النار -->
+                <div class="execution-photo-banner" style="background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 8px; padding: 22px 24px; margin-bottom: 35px; display: flex; gap: 24px; align-items: center; flex-wrap: wrap;">
+                    <div style="flex: 1 1 340px; max-width: 440px; position: relative; border-radius: 6px; overflow: hidden; border: 1px solid var(--border-subtle); cursor: pointer;" onclick="openLightbox('assets/images/صورة اثناء الطلق.png', 'لقطة كاميرا المراقبة أثناء واقعة إطلاق النار — «لم يكن الروبوت في منظور الكاميرا»')">
+                        <img src="assets/images/صورة اثناء الطلق.png" alt="صورة اثناء الطلق" style="width: 100%; height: auto; display: block; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        <span style="position: absolute; bottom: 8px; left: 8px; background: rgba(0,0,0,0.75); color: #fff; font-size: 0.72rem; padding: 3px 8px; border-radius: 3px; pointer-events: none;">انقر للتكبير 🔍</span>
+                        <span style="position: absolute; top: 8px; right: 8px; background: rgba(220,38,38,0.85); color: #fff; font-size: 0.72rem; font-weight: bold; padding: 2px 8px; border-radius: 3px;">دليل مصور محرز</span>
+                    </div>
+                    <div style="flex: 1 1 340px;">
+                        <span style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--gold-accent); background: rgba(212,175,55,0.1); border: 1px solid rgba(212,175,55,0.25); padding: 2px 8px; border-radius: 3px; display: inline-block; margin-bottom: 8px;">REF: EVD-EXE-IMG-001</span>
+                        <h4 style="font-size: 1.25rem; color: #ffffff; margin-bottom: 8px;">لقطة كاميرا المراقبة أثناء واقعة إطلاق النار</h4>
+                        <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 12px;">
+                            توثق هذه اللقطة مسرح الواقعة لحظة إجبار الضابط ريك جونير بالزي الشرطي الرسمي على الوقوف في مواجهة بتروف، مع رصد فني جنائي صريح يدون عبارة: 
+                            <strong style="color: #f87171;">«لم يكن الروبوت في منظور الكاميرا»</strong>، 
+                            وهو ما يفسر استخدام البروفيسور للكاميرا الخفية المدمجة في الروبوت لتوثيق المشهد بأسلوب يوحي باكتمال الإعدام لاستغلاله لاحقاً في الابتزاز.
+                        </p>
+                        <div style="display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.78rem; color: #94a3b8; border-top: 1px solid var(--border-subtle); padding-top: 10px;">
+                            <span>📁 اسم الملف: <code class="code-font" style="color: #93c5fd;">صورة اثناء الطلق.png</code></span>
+                            <span>⚖️ الحالة: <strong style="color: #34d399;">مؤكد ومطابق جنائياً</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Showcase Section (مشغلات الفيديو المستقلة المعتمدة) -->
+                <div class="execution-videos-section">
+                    <div class="sub-header-block">
+                        <span class="badge-film">VIDEO</span>
+                        <h4 class="sub-title-text">تسجيلات واقعة الإعدام المزعوم والتدخل الطبي</h4>
+                        <p class="sub-desc-text">المقاطع الأصلية المسجلة والمعتمدة جنائياً ضمن أحداث القضية</p>
+                    </div>
+
+                    <div class="video-players-grid" id="executionVideosContainer">
+                        <!-- Video Slot 1: تسجيل واقعة إطلاق النار المعتمد -->
+                        <div class="video-player-box" id="vbox-execution-shooting">
+                            <div class="video-header-bar">
+                                <span class="v-tag red-tag">تسجيل واقعة إطلاق النار</span>
+                                <span class="v-code">VID-EXEC-01</span>
+                            </div>
+                            <div class="video-frame-wrapper" id="playerWrap1">
+                                <video controls preload="metadata" poster="assets/images/صورة اثناء الطلق.png" style="width:100%; height:100%; object-fit:contain; background:#000;">
+                                    <source src="assets/videos/توثيق إطلاق النار على بتروف تحت التهديد.mp4" type="video/mp4">
+                                    متصفحك لا يدعم مشغل الفيديو HTML5.
+                                </video>
+                            </div>
+                            <div class="video-meta-block">
+                                <h5 class="v-meta-title">توثيق إطلاق النار على بتروف تحت التهديد</h5>
+                                <p class="v-meta-desc">المقطع المصور بواسطة روبوت البروفيسور والذي وثق لحظة إطلاق الضابط ريك النار تحت الإكراه والتهديد المباشر، واستُخدم لاحقاً لمحاولة ابتزازه.</p>
+                                <div class="v-meta-tags">
+                                    <span>المصدر: منظومة التصوير المدمجة في روبوت البروفيسور</span>
+                                    <span style="color:#34d399; font-weight:bold;">الحالة: مؤكد ومحرز جنائياً (تسجيل أصلي مدمج)</span>
+                                    <span>اسم الملف: توثيق إطلاق النار على بتروف تحت التهديد.mp4</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Video Slot 2: تسجيل التدخل الطبي وعلاج بتروف المعتمد -->
+                        <div class="video-player-box" id="vbox-execution-medical">
+                            <div class="video-header-bar">
+                                <span class="v-tag cyan-tag">تسجيلات التدخل الطبي على السفينة الحربية</span>
+                                <span class="v-code">VID-EXEC-02</span>
+                            </div>
+                            <div class="video-frame-wrapper" id="playerWrap2">
+                                <video controls preload="metadata" style="width:100%; height:100%; object-fit:contain; background:#000;">
+                                    <source src="assets/videos/التسجيل المشفر إسعاف وعلاج بتروف بواسطة البروفيسو.mp4" type="video/mp4">
+                                    متصفحك لا يدعم مشغل الفيديو HTML5.
+                                </video>
+                            </div>
+                            <div class="video-meta-block">
+                                <h5 class="v-meta-title">التسجيل المشفر: إسعاف وعلاج بتروف بواسطة البروفيسور</h5>
+                                <p class="v-meta-desc">التسجيل المستخرج من كاميرات السفينة الحربية المشفرة، يثبت بقاء بتروف حياً وتلقيه رعاية طبية عاجلة ومباشرة من البروفيسور فور الواقعة دون علم ريك.</p>
+                                <div class="v-meta-tags">
+                                    <span>المصدر: كاميرات المراقبة المشفرة (السفينة الحربية)</span>
+                                    <span style="color:#34d399; font-weight:bold;">الحالة: مؤكد ومحرز جنائياً (تسجيل أصلي مدمج)</span>
+                                    <span>اسم الملف: التسجيل المشفر إسعاف وعلاج بتروف بواسطة البروفيسو.mp4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 8: قسم الأدلة المصورة والرقمية
+             ============================================== -->
+        <section id="evidence" class="dossier-section section-evidence">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">EVIDENCE VAULT & ARCHIVE</span>
+                    <h2 class="section-title">الأدلة المصورة والرقمية</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">معرض الأدلة الجنائية والمضبوطات الرقمية — قابل للبحث والتصفية وعرض التفاصيل بدقة</p>
+                </div>
+
+                <!-- Evidence Search & Filter Toolbar -->
+                <div class="evidence-toolbar">
+                    <div class="search-box-wrapper">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" class="search-icon">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        </svg>
+                        <input type="text" id="evidenceSearchInput" placeholder="ابحث برقم الدليل، الاسم، الوصف، الفئة، أو الشخصية..." autocomplete="off">
+                        <button id="btnClearSearch" class="btn-clear-search" title="مسح البحث" style="display:none;">&times;</button>
+                    </div>
+
+                    <!-- Filter by Type -->
+                    <div class="type-filter-group">
+                        <span class="filter-group-label">نوع الملف:</span>
+                        <button class="filter-btn active" data-type="all">الكل (<span id="totalListedEvidenceCount">6</span>)</button>
+                        <button class="filter-btn" data-type="image">صور (<span id="countTypeImages">4</span>)</button>
+                        <button class="filter-btn" data-type="video">فيديو (<span id="countTypeVideos">2</span>)</button>
+                    </div>
+                </div>
+
+                <!-- Filter by Category (Active Evidence Categories) -->
+                <div class="category-filters-container">
+                    <span class="filter-group-label">تصنيف الفئات:</span>
+                    <div class="category-pill-list" id="categoryPillList">
+                        <button class="cat-pill active" data-category="all">كافة الفئات</button>
+                        <button class="cat-pill" data-category="تسجيلات واقعة إطلاق النار">واقعة إطلاق النار</button>
+                        <button class="cat-pill" data-category="تسجيلات التدخل الطبي بعد إطلاق النار">التدخل الطبي بعد إطلاق النار</button>
+                        <button class="cat-pill" data-category="تسجيلات المراقبة المتعلقة بعمليات القنص">تسجيلات عمليات القنص</button>
+                        <button class="cat-pill" data-category="الأدلة المتعلقة بالهجمات على الشرطة">الهجمات على الشرطة</button>
+                    </div>
+                </div>
+
+                <!-- Active Filter Tags Display & Counter -->
+                <div class="filter-status-row">
+                    <div class="filter-status-info">
+                        عرض <span id="filteredEvidenceCount">6</span> أدلة جنائية محرزة ومثبتة رسمياً
+                    </div>
+                </div>
+
+                <!-- Evidence Cards Grid (Dynamically rendered by script.js) -->
+                <div class="evidence-grid" id="evidenceGrid">
+                    <!-- Populated dynamically via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 9: جدول التهم
+             ============================================== -->
+        <section id="charges" class="dossier-section section-charges">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">LEGAL CHARGES MATRIX</span>
+                    <h2 class="section-title">جدول التهم الجنائية</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">لائحة الاتهامات والوقائع الجنائية المنسوبة للأطراف والأدلة الداعمة لكل تهمة</p>
+                </div>
+
+                <div class="charges-table-wrapper">
+                    <table class="lspd-table" id="chargesTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 80px;">رقم التهمة</th>
+                                <th>وصف التهمة الجنائية</th>
+                                <th>الشخصية المعنية</th>
+                                <th>الأدلة المرتبطة</th>
+                                <th>نتيجة التحقيق</th>
+                                <th style="width: 70px;">تفاصيل</th>
+                            </tr>
+                        </thead>
+                        <tbody id="chargesTableBody">
+                            <!-- Populated dynamically by script.js -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="table-legend">
+                    <span class="legend-item"><span class="legend-badge badge-support">أدلة داعمة للاتهام</span> تعني وجود قرائن وتسجيلات تؤيد ثبوت الواقعة ضمن ملف الاستدلال.</span>
+                    <span class="legend-item"><span class="legend-badge badge-cleared">انتفاء المسؤولية</span> تعني ثبوت انعدام القصد الجنائي لوجود الإكراه المادي والخداع.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 10: الخط الزمني للأحداث
+             ============================================== -->
+        <section id="timeline" class="dossier-section section-timeline">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">CHRONOLOGICAL EVENT CHAIN</span>
+                    <h2 class="section-title">الخط الزمني للأحداث</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">تسلسل الأحداث وفق ما أسفرت عنه التحقيقات والمواد المسجلة (انقر على أي حدث للانتقال للدليل المرتبط)</p>
+                </div>
+
+                <div class="timeline-interactive-wrapper">
+                    <div class="timeline-tree" id="timelineTree">
+                        <!-- Populated dynamically by script.js with the 12 events -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 11: قسم التحقيق المشترك
+             ============================================== -->
+        <section id="joint-investigation" class="dossier-section section-joint">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">INTER-AGENCY COORDINATION</span>
+                    <h2 class="section-title">التحقيق المشترك والتنسيق الأمني</h2>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">أطر التنسيق الفيدرالي لتدقيق الأدلة الرقمية وضمان سلامة الإجراءات</p>
+                </div>
+
+                <div class="joint-content-grid">
+                    <div class="joint-info-card">
+                        <div class="joint-header">
+                            <span class="joint-badge">تنسيق أمني ونظامي</span>
+                            <h4>مراجعة الأدلة وتنسيق المعلومات</h4>
+                        </div>
+                        <p class="joint-text">
+                            في إطار مباشرة وقائع القضية رقم <strong>LS-001</strong>، جرى تنسيق تحقيقي مشترك مع كلٍّ من <strong>مكتب التحقيقات الفيدرالي (FBI)</strong> و<strong>وكالة الاستخبارات المركزية (CIA)</strong>، بهدف مراجعة الأدلة الرقمية المشفرة وتنسيق المعلومات الميدانية، وضمان سير الإجراءات التحقيقية والضبطية بشكل نظامي واحترافي ضمن أحداث القضية.
+                        </p>
+                        <div class="joint-points">
+                            <div class="point-item">
+                                <span class="point-dot"></span>
+                                <span>تدقيق التسجيلات المشفرة الملتقطة على متن السفينة الحربية.</span>
+                            </div>
+                            <div class="point-item">
+                                <span class="point-dot"></span>
+                                <span>فحص تقنيات الذكاء الاصطناعي وأنظمة التسليح الخاصة بروبوت البروفيسور.</span>
+                            </div>
+                            <div class="point-item">
+                                <span class="point-dot"></span>
+                                <span>تتبع مسارات اختطاف الضباط والتحقق من سلامة المقاطع المصورة من التلاعب المونتاجي.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- البطاقة الخاصة: الجهة الناقلة للمعلومات (نص محدد نصاً) -->
+                    <div class="courier-agency-card">
+                        <div class="courier-badge">سرية</div>
+                        <h4 class="courier-title">الجهة الناقلة للمعلومات</h4>
+                        <div class="quote-container">
+                            <blockquote class="courier-quote">
+                                «جهة رسمية تابعة للحكومة، غير مصرح بالكشف عن هويتها أو تفاصيل اختصاصها. اقتصر دورها على نقل المعلومات وتسليم ملف القضية إلى الجهات المختصة، ولا تتحمل مسؤولية إدارة القضية بعد التسليم.»
+                            </blockquote>
+                        </div>
+                        <div class="courier-footer">
+                            <span class="confidential-seal">TOP SECRET // RESTRICTED DISCLOSURE</span>
+                            <span class="jurisdiction">ضمن الصلاحيات المودعة لدى LSPD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============================================
+             SECTION 12: التقرير الختامي
+             ============================================== -->
+        <section id="final-report" class="dossier-section section-final-report">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FINAL CASE RESOLUTION</span>
+                    <h2 class="section-title">التقرير النهائي للتحقيق</h2>
+                    <h3 class="section-subtitle-en">FINAL INVESTIGATION REPORT</h3>
+                    <div class="title-divider"></div>
+                    <p class="section-desc">الخلاصة الإجرائية الشاملة والنتائج النهائية المعتمدة لدى شرطة لوس سانتوس</p>
+                </div>
+
+                <!-- Official Printable Report Document -->
+                <div class="printable-report-paper" id="printableReport">
+                    <!-- Report Header (Official LSPD Letterhead) -->
+                    <div class="report-official-header">
+                        <div class="report-crest-col">
+                            <img src="assets/images/lspd-logo.webp" alt="POLICE DEPARTMENT شرطة لوس سانتوس" class="report-logo-img">
+                        </div>
+                        <div class="report-header-titles">
+                            <h3>LOS SANTOS POLICE DEPARTMENT</h3>
+                            <h4> شرطة لوس سانتوس — وحدة التحقيقات الجنائية الخاصة</h4>
+                            <div class="report-doc-meta">
+                                <span>رقم القضية: <strong>LS-001</strong></span>
+                                <span>التصنيف: <strong>سري للغاية / إحالة رسمية</strong></span>
+                                <span>المرجع: <strong>CR-DIV-SPEC-2026</strong></span>
+                            </div>
+                        </div>
+                        <div class="report-stamp-col">
+                            <div class="official-ink-stamp">
+                                <span>LSPD</span>
+                                <span>تحقيق معتمد</span>
+                                <span>VERIFIED</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="report-rule"></div>
+
+                    <!-- Findings per Person (النتيجة لكل شخصية) -->
+                    <div class="report-findings-section">
+                        <h4 class="report-section-heading">النتائج والمسؤوليات الجنائية المحددة بالتحقيق</h4>
+
+                        <!-- ألكساندر بتروف -->
+                        <div class="person-finding-card finding-wanted">
+                            <div class="finding-card-head">
+                                <span class="badge-wanted">مطلوب من الدرجة الأولى</span>
+                                <h5>ألكساندر بتروف — لوسفر (LUCIFER)</h5>
+                            </div>
+                            <ul class="finding-bullets">
+                                <li>المتهم الرئيسي في القضية.</li>
+                                <li>أدلة تربطه بالهجمات المسلحة والاختطاف والتلاعب بواقعة الإعدام.</li>
+                                <li>مطلوب من الدرجة الأولى لدى كافة الدوريات ونقاط التفتيش الأمنية.</li>
+                                <li>ملف التحقيق مكتمل ومُعَدٌّ بالكامل للإحالة القضائية ضمن أحداث القضية.</li>
+                            </ul>
+                        </div>
+
+                        <!-- البروفيسور -->
+                        <div class="person-finding-card finding-danger">
+                            <div class="finding-card-head">
+                                <span class="badge-danger">قائد المنظمة السرية</span>
+                                <h5>البروفيسور (THE PROFESSOR)</h5>
+                            </div>
+                            <ul class="finding-bullets">
+                                <li>قائد وموجه المنظمة السرية المتورطة.</li>
+                                <li>مرتبط بتطوير الروبوتات المتقدمة ونظم التسليح الخطرة.</li>
+                                <li>متهم بالتهديد والابتزاز والتلاعب الجنائي بواقعة الإعدام وتضليل العدالة.</li>
+                                <li>حالة الملف تُحدد وتُحدث وفق آخر مستجدات التحري المتوفرة.</li>
+                            </ul>
+                        </div>
+
+                        <!-- الضابط ريك جونير -->
+                        <div class="person-finding-card finding-cleared">
+                            <div class="finding-card-head">
+                                <span class="badge-cleared-green">انتفاء المسؤولية الجنائية</span>
+                                <h5>الضابط ريك جونير (OFFICER RICK JUNIOR)</h5>
+                            </div>
+                            <ul class="finding-bullets">
+                                <li>تعرض لواقعة اختطاف مسلح وتهديد مباشر وإكراه مادي قاهر.</li>
+                                <li>أطلق النار على ألكساندر بتروف تحت التهديد الشديد ودون إرادة حرة.</li>
+                                <li>لم يكن على علم بأن بتروف سيتلقى العلاج السري بعد إطلاق النار.</li>
+                                <li>انتفت مسؤوليته عن إعدام بتروف وفق الأدلة المعروضة والتسجيلات المشفرة.</li>
+                                <li>لم تثبت الأدلة المعروضة أي شكل من أشكال تعاونه الإرادي مع المنظمة السرية.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Official Mandatory Legal Statement (النص الإلزامي المطلوب) -->
+                    <div class="report-legal-notice">
+                        <div class="notice-border">
+                            <p class="notice-text">
+                                «تم إعداد هذا الملف استنادًا إلى الأدلة والمعلومات المتاحة ضمن القضية. تخضع النتائج النهائية للاعتماد القضائي وفق الإجراءات المعمول بها داخل إطار القضية.»
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Signature & Seal Blocks -->
+                    <div class="report-signatures-grid">
+                        <div class="sig-block">
+                            <span class="sig-title">المحقق الرئيسي المسؤول</span>
+                            <div class="sig-line"></div>
+                            <span class="sig-name">المحقق الجنائي الأول — وحدة القضايا الخاصة</span>
+                            <span class="sig-dept">LOS SANTOS POLICE DEPARTMENT</span>
+                        </div>
+                        <div class="sig-block">
+                            <span class="sig-title">اعتماد القيادة الشرطية</span>
+                            <div class="sig-line"></div>
+                            <span class="sig-name">ريموند ريد — نائب رئيس الشرطة</span>
+                            <span class="sig-dept">DEPUTY CHIEF OF POLICE</span>
+                        </div>
+                        <div class="sig-block seal-col">
+                            <div class="seal-placeholder">
+                                <span>خاتم الدائرة الرسمي</span>
+                                <span class="seal-sub">OFFICIAL SEAL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print Action Toolbar -->
+                <div class="report-actions-bar">
+                    <button class="btn btn-print-big" id="btnPrintReport">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3zm-3 11H8v-5h8v5zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm-1-9H6v4h12V3z"/>
+                        </svg>
+                        <span>طباعة التقرير النهائي أو حفظه كـ PDF</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="assets/images/lspd-logo.webp" alt="LSPD" class="lspd-footer-logo">
+                <div>
+                    <div class="f-title">LOS SANTOS POLICE DEPARTMENT</div>
+                    <div class="f-sub">ملف التحقيق الجنائي السري LS-001 — نظام السجلات المحفوظة</div>
+                </div>
+            </div>
+            <div class="footer-notice">
+                <span>وثيقة رسمية خاصة • الاستخدام مقيد بالأغراض التحقيقية المعتمدة • جميع الحقوق محفوظة لشرطة لوس سانتوس</span>
+            </div>
+            <div class="footer-top-btn">
+                <a href="#dashboard" class="btn-to-top" title="العودة لأعلى الصفحة">↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==============================================
+         EVIDENCE DETAILS & PREVIEW MODAL
+         ============================================== -->
+    <div class="modal-backdrop" id="evidenceModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <button class="modal-close" id="btnModalClose" aria-label="إغلاق النافذة">&times;</button>
+            
+            <div class="modal-header">
+                <div class="m-case-tag">CASE: LS-001</div>
+                <h3 class="modal-title" id="modalEvidenceTitle">تفاصيل الدليل الجنائي</h3>
+                <span class="modal-id-badge" id="modalEvidenceId">EVD-000</span>
+            </div>
+
+            <div class="modal-body">
+                <!-- Media View Container (Image / Video / Doc Preview) -->
+                <div class="modal-media-wrapper" id="modalMediaWrapper">
+                    <!-- Injected dynamically: Zoomable Image, Video Player, or Doc link -->
+                </div>
+
+                <!-- Complete Metadata Table -->
+                <div class="modal-metadata-wrapper">
+                    <h4 class="meta-section-title">بطاقة البيانات الفنية للدليل</h4>
+                    <table class="modal-meta-table">
+                        <tbody>
+                            <tr>
+                                <th>رقم الدليل:</th>
+                                <td id="modalMetaId">-</td>
+                            </tr>
+                            <tr>
+                                <th>اسم الدليل:</th>
+                                <td id="modalMetaTitle">-</td>
+                            </tr>
+                            <tr>
+                                <th>نوع الملف:</th>
+                                <td id="modalMetaType">-</td>
+                            </tr>
+                            <tr>
+                                <th>الفئة التحقيقية:</th>
+                                <td id="modalMetaCategory">-</td>
+                            </tr>
+                            <tr>
+                                <th>وصف الدليل:</th>
+                                <td id="modalMetaDesc">-</td>
+                            </tr>
+                            <tr>
+                                <th>تاريخ التسجيل:</th>
+                                <td id="modalMetaDate">-</td>
+                            </tr>
+                            <tr>
+                                <th>مصدر التسجيل:</th>
+                                <td id="modalMetaSource">-</td>
+                            </tr>
+                            <tr>
+                                <th>حالة التحقق:</th>
+                                <td id="modalMetaStatus">-</td>
+                            </tr>
+                            <tr>
+                                <th>صلة الدليل بالقضية:</th>
+                                <td id="modalMetaRelevance">-</td>
+                            </tr>
+                            <tr>
+                                <th>اسم الملف الأصلي:</th>
+                                <td id="modalMetaFilename" class="code-font">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal-nav-btns">
+                    <button class="btn btn-sm btn-modal-nav" id="btnModalPrev">السابق</button>
+                    <button class="btn btn-sm btn-modal-nav" id="btnModalNext">التالي</button>
+                </div>
+                <button class="btn btn-sm btn-secondary" id="btnModalCloseAction">إغلاق النافذة</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Zoom View -->
+    <div class="lightbox-overlay" id="imageLightbox" aria-hidden="true">
+        <button class="lightbox-close" id="btnLightboxClose">&times;</button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Core Vanilla JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
